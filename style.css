@@ -141,11 +141,11 @@ footer a { color:var(--gold); margin-left:1rem; }
 
 /* Base hero section styles */
 .hero {
-  background-image: url('images/_mg_0245.png');
+  background-image: url('images/img_3228.jpeg');
   background-size: cover;
-  background-position: top center;
+  background-position: center 15%; /* 👈 slightly higher, shows more of the top */
   background-repeat: no-repeat;
-  height: 85vh;
+  min-height: 650px; /* keep same height as before */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -154,6 +154,7 @@ footer a { color:var(--gold); margin-left:1rem; }
   position: relative;
   overflow: hidden;
 }
+
 
 .hero::before {
   content: "";
@@ -183,7 +184,7 @@ footer a { color:var(--gold); margin-left:1rem; }
 }
 
 .hero {
-  min-height: 70vh;
+  min-height: 650px;
 }
 
 
@@ -192,12 +193,17 @@ footer a { color:var(--gold); margin-left:1rem; }
   .hero {
     height: 70vh;
     background-size: cover;
-    background-position: top center; /* focuses upper area of image */
+    background-position: center 15%; /* focuses upper area of image */
   }
 
   .hero h1 {
     font-size: 2rem;
   }
+
+
+.hero {
+  filter: contrast(1.05) brightness(1.05);
+}
 
   .hero p {
     font-size: 1rem;
